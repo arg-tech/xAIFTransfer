@@ -51,6 +51,3 @@ for nodeid in data["nodeSets"]:
 	wget.download(url)
 '''
 # print (nodeset.status_code)
-
-print(fail)
-# docker run --detach --name=test-mysql -p 52000:3306  --env="MYSQL_ROOT_PASSWORD=mypassword" mysql
