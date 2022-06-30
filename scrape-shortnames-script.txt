@@ -1,0 +1,9 @@
+// Scrapes all corpora shortnames and outputs them in a single array
+// Execute in browser in the console window on http://corpora.aifdb.org/
+
+const corporaItems = document.querySelectorAll('.nodeset.clearfix > .corporalink');
+const shortNames = [...corporaItems].map(corpora => corpora.href).map(function(link) {
+    return link.replace(new RegExp("^" + 'http://corpora.aifdb.org/'), '');
+});
+
+console.log(JSON.stringify(shortNames));
