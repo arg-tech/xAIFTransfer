@@ -6,7 +6,7 @@ import asyncio
 '''
 async def io_related(name):
 	print(f'{name} started')
-	url = 'http://corpora.aifdb.org/list.php/helpers/corporanodesets.php?shortname=qt14102021wtxt'
+	url = 'http://corpora.aifdb.org/helpers/corporanodesets.php?shortname=qt14102021wtxt'
 	nodeset = requests.get(url)
 	await asyncio.sleep(5)
 	print(f'{name} finished')
